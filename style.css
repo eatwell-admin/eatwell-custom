@@ -377,12 +377,12 @@ ul {
   text-decoration: none;
 }
 
-.button.button-primary:hover, .split-button button:hover, .section-subscribe button.button-primary:hover, .section-subscribe button[data-selected="true"]:hover, .article-subscribe button.button-primary:hover, .article-subscribe button[data-selected="true"]:hover, .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:hover, .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button[data-selected="true"]:hover, .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .button.button-primary:focus, .split-button button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button[data-selected="true"]:focus, .article-subscribe button.button-primary:focus, .article-subscribe button[data-selected="true"]:focus, .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:focus, .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button[data-selected="true"]:focus, .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .button.button-primary:active, .split-button button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button[data-selected="true"]:active, .article-subscribe button.button-primary:active, .article-subscribe button[data-selected="true"]:active, .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button[data-selected="true"]:active, .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button[data-selected="true"]:active, .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active {
+.button.button-primary:hover, .split-button button:hover, .section-subscribe button.button-primary:hover, .section-subscribe button:hover[data-selected="true"], .article-subscribe button.button-primary:hover, .article-subscribe button:hover[data-selected="true"], .community-follow button.button-primary:hover, .requests-table-toolbar .organization-subscribe button.button-primary:hover, .requests-table-toolbar .organization-subscribe button:hover[data-selected="true"], .subscriptions-subscribe button.button-primary:hover, .subscriptions-subscribe button:hover[data-selected="true"], .button-primary.pagination-next-link:hover, .button-primary.pagination-prev-link:hover, .button-primary.pagination-first-link:hover, .button-primary.pagination-last-link:hover, .button.button-primary:focus, .split-button button.button-primary:focus, .section-subscribe button.button-primary:focus, .section-subscribe button:focus[data-selected="true"], .article-subscribe button.button-primary:focus, .article-subscribe button:focus[data-selected="true"], .community-follow button.button-primary:focus, .requests-table-toolbar .organization-subscribe button.button-primary:focus, .requests-table-toolbar .organization-subscribe button:focus[data-selected="true"], .subscriptions-subscribe button.button-primary:focus, .subscriptions-subscribe button:focus[data-selected="true"], .button-primary.pagination-next-link:focus, .button-primary.pagination-prev-link:focus, .button-primary.pagination-first-link:focus, .button-primary.pagination-last-link:focus, .button.button-primary:active, .split-button button.button-primary:active, .section-subscribe button.button-primary:active, .section-subscribe button:active[data-selected="true"], .article-subscribe button.button-primary:active, .article-subscribe button:active[data-selected="true"], .community-follow button.button-primary:active, .requests-table-toolbar .organization-subscribe button.button-primary:active, .requests-table-toolbar .organization-subscribe button:active[data-selected="true"], .subscriptions-subscribe button.button-primary:active, .subscriptions-subscribe button:active[data-selected="true"], .button-primary.pagination-next-link:active, .button-primary.pagination-prev-link:active, .button-primary.pagination-first-link:active, .button-primary.pagination-last-link:active {
   background-color: darken($brand_color, 20%);
   border-color: darken($brand_color, 20%);
 }
 
-.button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], [data-disabled].pagination-next-link, [data-disabled].pagination-prev-link, [data-disabled].pagination-first-link, [data-disabled].pagination-last-link {
+.button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], .pagination-next-link[data-disabled], .pagination-prev-link[data-disabled], .pagination-first-link[data-disabled], .pagination-last-link[data-disabled] {
   cursor: default;
 }
 
@@ -637,7 +637,7 @@ ul {
 }
 
 .form .suggestion-list li a:visited {
-  color: darken($link_color, 20%);
+  color: $visited_link_color;
 }
 
 /***** Header *****/
@@ -661,6 +661,20 @@ ul {
 
 .logo img {
   max-height: 37px;
+  vertical-align: middle;
+}
+
+.logo span {
+  margin: 0 10px;
+  color: $brand_color;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo a:hover, .logo a:focus, .logo a:active {
+  text-decoration: none;
 }
 
 .user-nav {
@@ -914,7 +928,7 @@ ul {
   }
 }
 
-.footer-language-selector {
+.footer-language-selector button {
   color: lighten($text_color, 20%);
   display: inline-block;
   font-weight: 300;
@@ -1288,6 +1302,7 @@ li:nth-child(2) .category-icon{
 
 .community-image {
   min-height: 300px;
+  margin-top: 32px;
   background-image: url($community_image);
   background-position: center;
   background-repeat: no-repeat;
@@ -1496,10 +1511,6 @@ li:nth-child(2) .category-icon{
   margin: 40px 0;
 }
 
-.section-list--collapsed .section-list-item:nth-child(1n + 6) {
-  display: none;
-}
-
 .section-list-item {
   border-bottom: 1px solid #ddd;
   font-size: 16px;
@@ -1644,7 +1655,7 @@ li:nth-child(2) .category-icon{
 }
 
 .article-body a:visited {
-  color: darken($link_color, 20%);
+  color: $visited_link_color;
 }
 
 .article-body code {
@@ -2103,7 +2114,7 @@ li:nth-child(2) .category-icon{
 }
 
 .comment-body a:visited {
-  color: darken($link_color, 20%);
+  color: $visited_link_color;
 }
 
 .comment-body code {
@@ -2411,7 +2422,7 @@ li:nth-child(2) .category-icon{
 }
 
 .striped-list-title:visited {
-  color: darken($link_color, 20%);
+  color: $visited_link_color;
 }
 
 .striped-list .meta-group {
@@ -2534,10 +2545,6 @@ li:nth-child(2) .category-icon{
 
 .status-label-hold {
   background-color: #000;
-}
-
-.status-label-open, .status-label-closed, .status-label-solved, .status-label-new, .status-label-hold, .status-label-pending {
-  text-transform: lowercase;
 }
 
 /***** Post *****/
@@ -2682,7 +2689,7 @@ li:nth-child(2) .category-icon{
 }
 
 .post-body a:visited {
-  color: darken($link_color, 20%);
+  color: $visited_link_color;
 }
 
 .post-body code {

@@ -1,3 +1,80 @@
+# [2.8.0](https://github.com/zendesk/copenhagen_theme/compare/v2.7.2...v2.8.0) (2021-01-21)
+
+
+### Features
+
+* Visual update (images, colors, margins) ([5c208ef](https://github.com/zendesk/copenhagen_theme/commit/5c208ef4a117810f2aa575b4954c36f169015d57))
+
+## [2.7.2](https://github.com/zendesk/copenhagen_theme/compare/v2.7.1...v2.7.2) (2020-12-16)
+
+
+### Bug Fixes
+
+* **search:** Use scoped search based on category user is in for sections and category ([42cee53](https://github.com/zendesk/copenhagen_theme/commit/42cee535d15f6de9033e0a95492a894890f43ce2))
+
+## [2.7.1](https://github.com/zendesk/copenhagen_theme/compare/v2.7.0...v2.7.1) (2020-12-01)
+
+
+### Bug Fixes
+
+* **script:** [COMM-1283] Fix null error ([8f71ff8](https://github.com/zendesk/copenhagen_theme/commit/8f71ff804c8ada770b0c984dc0b1d49afbbed9e9))
+
+# [2.7.0](https://github.com/zendesk/copenhagen_theme/compare/v2.6.0...v2.7.0) (2020-11-30)
+
+
+### Features
+
+* **requests:** [COMM-1283] Check for "emptiness" when using WYSIWYG ([f9c81da](https://github.com/zendesk/copenhagen_theme/commit/f9c81dab432144790a41dff1dbc984fdd44ceb30))
+
+# [2.6.0](https://github.com/zendesk/copenhagen_theme/compare/v2.5.4...v2.6.0) (2020-11-23)
+
+
+### Features
+
+* add subsections pagination to section template ([6d0dcba](https://github.com/zendesk/copenhagen_theme/commit/6d0dcba859872a210a97efa980541c5098bebe2c))
+
+## [2.5.4](https://github.com/zendesk/copenhagen_theme/compare/v2.5.3...v2.5.4) (2020-11-16)
+
+
+### Bug Fixes
+
+* **request:** render title values for priority and type fields ([4c28714](https://github.com/zendesk/copenhagen_theme/commit/4c28714246177a1489eb9a1923d1489eed30bbe3))
+
+## [2.5.3](https://github.com/zendesk/copenhagen_theme/compare/v2.5.2...v2.5.3) (2020-11-13)
+
+
+### Bug Fixes
+
+* **article:** don't render attachments if there are none ([d6026a5](https://github.com/zendesk/copenhagen_theme/commit/d6026a5753062029ec2c7d19ae235d445821bb40))
+
+## [2.5.2](https://github.com/zendesk/copenhagen_theme/compare/v2.5.1...v2.5.2) (2020-11-12)
+
+
+### Bug Fixes
+
+* **request:** remove lowercase styling for request status ([146618b](https://github.com/zendesk/copenhagen_theme/commit/146618bea943997440ba2d8c4ff85e4daa250312))
+
+## [2.5.1](https://github.com/zendesk/copenhagen_theme/compare/v2.5.0...v2.5.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* **styles:** fix language selector styles ([439ae4d](https://github.com/zendesk/copenhagen_theme/commit/439ae4d28b497a566e523bcf1614a255b59065cc))
+
+# [2.5.0](https://github.com/zendesk/copenhagen_theme/compare/v2.4.1...v2.5.0) (2020-10-13)
+
+
+### Features
+
+* **requests:** [GATHER-55] Enable WYSIWYG editor on (new) request page ([b38cf05](https://github.com/zendesk/copenhagen_theme/commit/b38cf050e4e2d04f4a4a8f65e282e963f7042de7))
+
+## [2.4.1](https://github.com/zendesk/copenhagen_theme/compare/v2.4.0...v2.4.1) (2020-10-06)
+
+
+### Bug Fixes
+
+* **article:** use t helper for article attachments download string ([7959d9c](https://github.com/zendesk/copenhagen_theme/commit/7959d9c165aaaa90bd4e59e233aebf21c7e0edca))
+
 # [2.4.0](https://github.com/zendesk/copenhagen_theme/compare/v2.3.1...v2.4.0) (2020-08-31)
 
 
