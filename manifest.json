@@ -1,7 +1,7 @@
 {
   "name": "Eatwell Custom Theme",
   "author": "Zendesk",
-  "version": "2.8.0",
+  "version": "2.10.0",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -217,7 +217,7 @@
           "type": "checkbox",
           "description": "show_brand_name_description",
           "label": "show_brand_name_label",
-          "value": false
+          "value": true
         },
         {
           "identifier": "favicon",
